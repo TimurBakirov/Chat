@@ -1,0 +1,45 @@
+﻿<html>
+	<head>
+		<script>
+			var ip = "127.0.0.1";
+			var port = "8080";
+			var socket;
+			var important;
+			var label;
+			
+			window.onload = function(){
+				label = document.getElementById("listOfMessages");
+				socket = new WebSocket("ws://"+ ip +":"+ port);
+				socket.onopen = function(){
+					console.log("Соединение установлено");
+					socket.send('{"type":0,"message":"1"}');
+					socket.send('{"type":0,"message":"2"}');
+					socket.send('{"type":0,"message":"3"}');
+					socket.send('{"type":0,"message":"4"}');
+					socket.send('{"type":0,"message":"5"}');
+					socket.send('{"type":0,"message":"6"}');
+				};
+				socket.onclose = function(event){
+					if(event.wasClean){
+						console.log("Соединение закрыто чисто");
+					}else{
+						console.log("Обрыв соединения");
+					}
+				};
+				socket.onmessage = function(event){
+					important = JSON.parse(event.data);
+					switch(important["type"]){
+						case 0:
+							label.innerHTML += important["message"] +"<br>";
+							break;
+					}
+				};
+			}
+		</script>
+	</head>
+	<body>
+		<div id="listOfMessages">
+		
+		</div>
+	</body>
+</html>
