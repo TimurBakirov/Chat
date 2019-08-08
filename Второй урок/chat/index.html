@@ -1,0 +1,76 @@
+﻿<html>
+	<head>
+		<script>
+			var ip = "127.0.0.1";
+			var port = "8080";
+			var socket;
+			var important;
+			var label;
+			var listOfErrors;
+			var fieldOfSendMessage;
+			var nick;
+			var password;
+			
+			window.onload = function(){
+				label = document.getElementById("listOfMessages");
+				listOfErrors = document.getElementById("listOfErrors");
+				fieldOfSendMessage = document.getElementById("fieldOfSendMessage");
+				nick = document.getElementById("name");
+				password = document.getElementById("password");
+				socket = new WebSocket("ws://"+ ip +":"+ port);
+				socket.onopen = function(){
+					console.log("Соединение установлено");
+				};
+				socket.onclose = function(event){
+					if(event.wasClean){
+						console.log("Соединение закрыто чисто");
+					}else{
+						console.log("Обрыв соединения");
+					}
+				};
+				socket.onmessage = function(event){
+					important = JSON.parse(event.data);
+					switch(important["type"]){
+						case 0:
+							console.log(123);
+							label.innerHTML += important["nameUser"] +": "+ important["message"] +"<br>";
+							break;
+						case 1:
+							if(important["error"] == 0){
+								listOfErrors.innerHTML += "Вы авторизировались!<br>";
+								fieldOfSendMessage.disabled = "";
+							}
+							if(important["error"] == 1)
+								listOfErrors.innerHTML += "Неправильный логин или пароль!<br>";
+							if(important["error"] == 2)
+								listOfErrors.innerHTML += "Данный аккаунт уже занят!<br>";
+							break;
+					}
+				};
+				btnSend.onclick = function (){
+					socket.send('{"type":0,"message":"'+ fieldOfSendMessage.value +'"}');
+					fieldOfSendMessage.value = "";
+				};
+				btnAuth.onclick = function (){
+					socket.send('{"type":1,"nick":"'+ nick.value +'","password":"'+ password.value +'"}');
+					nick.value = "";
+					password.value = "";
+				};
+			}
+		</script>
+	</head>
+	<body>
+		<p>
+			<input id="name" placeholder="Имя пользователя">
+			<input id="password" placeholder="Пароль">
+			<div id="btnAuth" style="background: black; width: 100px; height: 50px;"></div>
+		</p>
+		<div id="listOfMessages">
+		
+		</div>
+		<div id="sendMessages"><input disabled="disabled" id="fieldOfSendMessage" placeholder="Сообщение"><div id="btnSend" style="background: black; width: 100px; height: 50px;"></div></div>
+		<div id="listOfErrors">
+		
+		</div>
+	</body>
+</html>
