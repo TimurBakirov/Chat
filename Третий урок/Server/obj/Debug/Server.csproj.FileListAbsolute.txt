@@ -1,0 +1,57 @@
+D:\Users\web\Desktop\Server\bin\Debug\Server.exe.config
+D:\Users\web\Desktop\Server\bin\Debug\Server.exe
+D:\Users\web\Desktop\Server\bin\Debug\Server.pdb
+D:\Users\web\Desktop\Server\bin\Debug\BouncyCastle.Crypto.dll
+D:\Users\web\Desktop\Server\bin\Debug\Fleck.dll
+D:\Users\web\Desktop\Server\bin\Debug\Google.Protobuf.dll
+D:\Users\web\Desktop\Server\bin\Debug\MySql.Data.dll
+D:\Users\web\Desktop\Server\bin\Debug\Newtonsoft.Json.dll
+D:\Users\web\Desktop\Server\bin\Debug\Renci.SshNet.dll
+D:\Users\web\Desktop\Server\bin\Debug\System.Web.Helpers.dll
+D:\Users\web\Desktop\Server\bin\Debug\Google.Protobuf.xml
+D:\Users\web\Desktop\Server\bin\Debug\MySql.Data.xml
+D:\Users\web\Desktop\Server\bin\Debug\Newtonsoft.Json.xml
+D:\Users\web\Desktop\Server\bin\Debug\Renci.SshNet.xml
+D:\Users\web\Desktop\Server\obj\Debug\Server.csprojAssemblyReference.cache
+D:\Users\web\Desktop\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+D:\Users\web\Desktop\Server\obj\Debug\Server.csproj.CopyComplete
+D:\Users\web\Desktop\Server\obj\Debug\Server.exe
+D:\Users\web\Desktop\Server\obj\Debug\Server.pdb
+D:\Users\web\Desktop\Chat\Server\bin\Debug\Server.exe.config
+D:\Users\web\Desktop\Chat\Server\bin\Debug\Server.exe
+D:\Users\web\Desktop\Chat\Server\bin\Debug\Server.pdb
+D:\Users\web\Desktop\Chat\Server\bin\Debug\Fleck.dll
+D:\Users\web\Desktop\Chat\Server\bin\Debug\MySql.Data.dll
+D:\Users\web\Desktop\Chat\Server\bin\Debug\Newtonsoft.Json.dll
+D:\Users\web\Desktop\Chat\Server\bin\Debug\System.Web.Helpers.dll
+D:\Users\web\Desktop\Chat\Server\bin\Debug\Google.Protobuf.dll
+D:\Users\web\Desktop\Chat\Server\bin\Debug\Renci.SshNet.dll
+D:\Users\web\Desktop\Chat\Server\bin\Debug\BouncyCastle.Crypto.dll
+D:\Users\web\Desktop\Chat\Server\bin\Debug\MySql.Data.xml
+D:\Users\web\Desktop\Chat\Server\bin\Debug\Newtonsoft.Json.xml
+D:\Users\web\Desktop\Chat\Server\bin\Debug\Google.Protobuf.xml
+D:\Users\web\Desktop\Chat\Server\bin\Debug\Renci.SshNet.xml
+D:\Users\web\Desktop\Chat\Server\obj\Debug\Server.csprojAssemblyReference.cache
+D:\Users\web\Desktop\Chat\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+D:\Users\web\Desktop\Chat\Server\obj\Debug\Server.csproj.CopyComplete
+D:\Users\web\Desktop\Chat\Server\obj\Debug\Server.exe
+D:\Users\web\Desktop\Chat\Server\obj\Debug\Server.pdb
+D:\Users\web\Desktop\Chat\Второй урок\Server\bin\Debug\Server.exe.config
+D:\Users\web\Desktop\Chat\Второй урок\Server\bin\Debug\Server.exe
+D:\Users\web\Desktop\Chat\Второй урок\Server\bin\Debug\Server.pdb
+D:\Users\web\Desktop\Chat\Второй урок\Server\bin\Debug\Fleck.dll
+D:\Users\web\Desktop\Chat\Второй урок\Server\bin\Debug\MySql.Data.dll
+D:\Users\web\Desktop\Chat\Второй урок\Server\bin\Debug\Newtonsoft.Json.dll
+D:\Users\web\Desktop\Chat\Второй урок\Server\bin\Debug\System.Web.Helpers.dll
+D:\Users\web\Desktop\Chat\Второй урок\Server\bin\Debug\Google.Protobuf.dll
+D:\Users\web\Desktop\Chat\Второй урок\Server\bin\Debug\Renci.SshNet.dll
+D:\Users\web\Desktop\Chat\Второй урок\Server\bin\Debug\BouncyCastle.Crypto.dll
+D:\Users\web\Desktop\Chat\Второй урок\Server\bin\Debug\MySql.Data.xml
+D:\Users\web\Desktop\Chat\Второй урок\Server\bin\Debug\Newtonsoft.Json.xml
+D:\Users\web\Desktop\Chat\Второй урок\Server\bin\Debug\Google.Protobuf.xml
+D:\Users\web\Desktop\Chat\Второй урок\Server\bin\Debug\Renci.SshNet.xml
+D:\Users\web\Desktop\Chat\Второй урок\Server\obj\Debug\Server.csprojAssemblyReference.cache
+D:\Users\web\Desktop\Chat\Второй урок\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+D:\Users\web\Desktop\Chat\Второй урок\Server\obj\Debug\Server.csproj.CopyComplete
+D:\Users\web\Desktop\Chat\Второй урок\Server\obj\Debug\Server.exe
+D:\Users\web\Desktop\Chat\Второй урок\Server\obj\Debug\Server.pdb
