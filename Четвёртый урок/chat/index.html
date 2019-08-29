@@ -1,0 +1,50 @@
+﻿<html>
+	<head>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<script src="js/server_message_processing.js"></script>
+		<script src="js/jquery.js"></script>
+	</head>
+	<body>
+		<div id="login" class="login">
+			<div class="login_box">
+				<input class="loginName" id="name" placeholder="Имя пользователя">
+				<input class="loginPassword" id="password" placeholder="Пароль">
+				<div class="btnAuth" id="btnAuth">Войти</div>
+			</div>
+		</div>
+		<div class="container" id="container">
+			<div id="listOfMessagesBlock">
+				<div class="panel_top">
+					<div class="backToListOfFriends" onclick="PagesController(0)"></div>
+					<div class="chatName">Chat Name</div>
+					<div class="menuButtonInMessage"></div>
+				</div>
+				<div class="listOfMessages" id="listOfMessages">
+				</div>
+				<div class="panel_bottom">
+					<input disabled="disabled" class="fieldOfSendMessage" id="fieldOfSendMessage">
+					<div class="btnSend" id="btnSend"></div>
+				</div>
+			</div>
+			<div id="listOfFriendsBlock">
+				<div class="listOfFriends" id="listOfFriends">
+					<div id="chatId_0" class="friendBox" onclick="PagesController(1, 1)">
+						<div class="userIcon"></div>
+						<div class="userName">user Name 1</div>
+						<div class="lastMessage">last Message</div>
+					</div>
+					<div id="chatId_1" class="friendBox" onclick="PagesController(1, 2)">
+						<div class="userIcon"></div>
+						<div class="userName">user Name 2</div>
+						<div class="lastMessage">last Message</div>
+					</div>
+					<div id="chatId_2" class="friendBox" onclick="PagesController(1, 3)">
+						<div class="userIcon"></div>
+						<div class="userName">user Name 3</div>
+						<div class="lastMessage">last Message</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

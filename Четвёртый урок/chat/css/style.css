@@ -1,0 +1,258 @@
+﻿body{
+	margin: 0;
+	overflow: hidden;
+}
+.container{
+	width: 75vw;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100vh;
+	background-color: #FAFAFA;
+}
+.panel_top, .panel_bottom{
+	width: 50vw;
+	height: 8vh;
+	background-color: #E2E2E2;
+}
+.panel_top{
+	margin-left: auto;
+	margin-right: auto;
+}
+.panel_bottom{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -25vw;
+}
+.btnSend{
+	background: url(../img/SendButton.png);
+    width: 4.6vw;
+    height: 3.6vh;
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	bottom: 50%;
+	margin-bottom: -1.6vh;
+	border-radius: 0.5vw;
+	right: 0.5vw;
+}
+.listOfMessages {
+	height: 82vh;
+    width: 48vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f5f5f5;
+    padding: 1vh 1vw;
+    font-size: 2vh;
+	overflow: overlay;
+}
+.listOfMessages::-webkit-scrollbar { 
+	width: 0 !important 
+}
+.listOfFriends {
+	height: 98vh;
+    width: 48vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f5f5f5;
+    padding: 1vh 1vw;
+    font-size: 2vh;
+	overflow: overlay;
+}
+.listOfFriends::-webkit-scrollbar { 
+	width: 0 !important 
+}
+.fieldOfSendMessage{
+	background-color: white;
+	position: absolute;
+	bottom: 50%;
+	margin-bottom: -1.8vh;
+	height: 3.6vh;
+	margin-left: 1vw;
+	width: 43vw;
+	border-radius: 0.5vw;
+	padding: 0.25vh; 
+	border: 0;
+    font-size: 2vh;
+}
+.btnAuth{
+	background: #e0e0e0;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+    border-radius: 1vw;
+    font-size: 3vh;
+    padding: 0.7vh 1.5vw;
+    color: #757575;
+}
+.login{
+	background-color: #00000050;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+    z-index: 1;
+	display: none;
+}
+.my_message {
+	word-break: break-all;
+    background: lightgrey;
+    background-repeat: no-repeat;
+    padding: 0.7vh 0.9vw;
+    background-size: cover;
+    width: fit-content;
+    border-radius: 1vw 1vw 0 1vw;
+	max-width: 75%;
+	margin-top: 1vh;
+	margin-left: auto;
+}
+.friend_message {
+	word-break: break-all;
+    background: lightskyblue;
+    padding: 0.7vh 0.9vw;
+    width: fit-content;
+    border-radius: 1vw 1vw 1vw 0;
+	max-width: 75%;
+	margin-top: 1vh;
+	margin-right: auto;
+}
+.info_message{
+	width: fit-content;
+    margin: 1vh auto;
+    color: darkgrey;
+}
+.backToListOfFriends{
+	width: 4vw;
+    height: 5vh;
+    margin-top: 1.5vh;
+	margin-left: 1vw;
+    position: absolute;
+    background: url(../img/Back.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.chatName{
+	    width: 36vw;
+    height: 5vh;
+    margin-top: 1.5vh;
+    margin-left: 6vw;
+    position: absolute;
+    text-align: center;
+    font-size: 4vh;
+    color: #999999;
+}
+.menuButtonInMessage{
+	width: 4vw;
+    height: 4.5vh;
+    margin-top: 1.5vh;
+    margin-left: 45vw;
+    position: absolute;
+    background: url(../img/Menu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.friendBox{
+	width: 100%;
+	height: 15vh;
+	position: relative;
+	border-bottom: #999999 solid thin;
+}
+.userIcon{
+    width: 10vw;
+    height: 10vw;
+    background: url(../img/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    margin-top: -5vw;
+}
+.userName{
+	width: 36vw;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -13vw;
+    margin-top: -4vh;
+    text-align: center;
+	font-size: 3vh;
+	color: #999999;
+}
+.lastMessage{
+	width: 36vw;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -13vw;
+    margin-top: 1vh;
+    text-align: center;
+	font-size: 3vh;
+	color: #999999;
+}
+@media screen and (min-width: 1140px) {
+	.login_box{
+		width: 30vw;
+		height: 30vh;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		margin-bottom: 35vh;
+		margin-left: -15vw;
+		background-color: white;
+	}
+	.loginName, .loginPassword{
+		padding: 0.5vh 0.4vw;
+		border-radius: 1vw;
+		border: 0;
+		background-color: #e0e0e0;
+		width: 20vw;
+		position: absolute;
+		left: 50%;
+		margin-left: -10vw;
+		height: 5vh;
+		font-size: 3vh;
+	}
+	.loginName{
+		margin-top: 5vh;
+	}
+	.loginPassword{
+		margin-top: 13vh;
+	}
+}
+@media screen and (max-width: 1140px) {
+	.login_box{
+		width: 50vw;
+		height: 30vh;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		margin-bottom: 35vh;
+		margin-left: -25vw;
+		background-color: white;
+	}
+	.loginName, .loginPassword{
+		padding: 0.5vh 0.4vw;
+		border-radius: 1vw;
+		border: 0;
+		background-color: #e0e0e0;
+		width: 40vw;
+		position: absolute;
+		left: 50%;
+		margin-left: -20vw;
+		height: 5vh;
+		font-size: 3vh;
+	}
+	.loginName{
+		margin-top: 5vh;
+	}
+	.loginPassword{
+		margin-top: 13vh;
+	}
+}
